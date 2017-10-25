@@ -20,6 +20,13 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/hrdb/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -104,6 +111,7 @@
                         <configuration>
                             <sources>
                                 <source>services/googleapis/src</source>
+                                <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
                         </configuration>
@@ -302,6 +310,6 @@
         <profile.props.file>development.properties</profile.props.file>
         <spring.version>4.3.9.RELEASE</spring.version>
         <spring.security.version>4.1.2.RELEASE</spring.security.version>
-        <wavemaker.studio.version>9.0.1.3815</wavemaker.studio.version>
+        <wavemaker.studio.version>9.0.1.3816</wavemaker.studio.version>
     </properties>
 </project>
